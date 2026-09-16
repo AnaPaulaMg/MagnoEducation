@@ -1,0 +1,10 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/Front_end/index.html" },
+    { "source": "/curso-iniciante.html", "destination": "/Front_end/curso-iniciante.html" },
+    { "source": "/curso-avancado.html", "destination": "/Front_end/curso-avancado.html" },
+    { "source": "/styles.css", "destination": "/Front_end/styles.css" },
+    { "source": "/brand.css", "destination": "/Front_end/brand.css" },
+    { "source": "/script.js", "destination": "/Front_end/script.js" }
+  ]
+}
