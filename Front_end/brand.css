@@ -587,6 +587,55 @@ body {
         font-size: 9px
     }
 }
+.training-track b {
+    font-size: 0 !important;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    flex: 0 0 12px;
+    position: relative
+}
+
+.training-track b::before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: var(--gold);
+    transform: rotate(45deg)
+}
+
+.principles h3 {
+    font-size: 24px !important;
+    color: #fff !important
+}
+
+.principles p {
+    font-size: 14px !important;
+    line-height: 1.75 !important;
+    color: #d9deea !important
+}
+
+.principles article {
+    min-height: 205px
+}
+
+@media(max-width:700px) {
+    body {
+        background-attachment: scroll !important
+    }
+
+    .principles h3 {
+        font-size: 21px !important
+    }
+
+    .principles p {
+        font-size: 13px !important
+    }
+
+    .principles article {
+        min-height: 0
+    }
+}
 
 .portrait-frame {
     aspect-ratio: 4/5;
