@@ -30,7 +30,7 @@ body {
     background: var(--paper);
     color: var(--ink);
     font-family: var(--sans);
-    background-image: linear-gradient(rgba(21, 26, 50, .93), rgba(21, 26, 50, .97)), url('img/logo.png');
+    background-image: linear-gradient(rgba(21, 26, 50, .93), rgba(21, 26, 50, .97)), url('./img/logo.png');
     background-size: cover;
     background-attachment: fixed
 }
