@@ -1,10 +1,16 @@
 {
+  "redirects": [
+    { "source": "/curso-iniciante.html", "destination": "/curso-iniciante", "permanent": true },
+    { "source": "/curso-avancado.html", "destination": "/curso-avancado", "permanent": true },
+    { "source": "/index.html", "destination": "/", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/", "destination": "/Front_end/index.html" },
-    { "source": "/curso-iniciante.html", "destination": "/Front_end/curso-iniciante.html" },
-    { "source": "/curso-avancado.html", "destination": "/Front_end/curso-avancado.html" },
+    { "source": "/curso-iniciante", "destination": "/Front_end/curso-iniciante.html" },
+    { "source": "/curso-avancado", "destination": "/Front_end/curso-avancado.html" },
     { "source": "/styles.css", "destination": "/Front_end/styles.css" },
     { "source": "/brand.css", "destination": "/Front_end/brand.css" },
-    { "source": "/script.js", "destination": "/Front_end/script.js" }
+    { "source": "/script.js", "destination": "/Front_end/script.js" },
+    { "source": "/img/:path*", "destination": "/Front_end/img/:path*" }
   ]
 }
