@@ -17,3 +17,24 @@ document.querySelectorAll('.principles article, .course, .quote-section blockquo
 const style = document.createElement('style');
 style.textContent = '@keyframes rise { to { opacity: 1; transform: translateY(0); } }';
 document.head.appendChild(style);
+
+const menuToggle = document.querySelector('.menu-toggle');
+const siteHeader = document.querySelector('.site-header');
+
+if (menuToggle && siteHeader) {
+  const closeMenu = () => {
+    siteHeader.classList.remove('menu-open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuToggle.querySelector('.sr-only').textContent = 'Abrir menu';
+  };
+
+  menuToggle.addEventListener('click', () => {
+    const isOpen = siteHeader.classList.toggle('menu-open');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+    menuToggle.querySelector('.sr-only').textContent = isOpen ? 'Fechar menu' : 'Abrir menu';
+  });
+
+  siteHeader.querySelectorAll('.nav-links a').forEach((link) => {
+    link.addEventListener('click', closeMenu);
+  });
+}

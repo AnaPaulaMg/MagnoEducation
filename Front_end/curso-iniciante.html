@@ -15,14 +15,20 @@
         <a class="brand" href="index.html" aria-label="Magno Education, início">
             <img class="logo-image" src="img/logo.png" alt="MGN Education" />
         </a>
-        <nav class="nav-links" aria-label="Navegação principal">
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="sr-only">Abrir menu</span>
+        </button>
+        <nav class="nav-links" id="primary-navigation" aria-label="Navegação principal">
+            <a href="./index.html">Início</a>
             <a href="./index.html#metodo">O método</a>
             <a href="./index.html#cursos">Cursos</a>
             <a href="./index.html#formacoes">Experiência</a>
             <a href="./index.html#localizacao">Localização</a>
         </nav>
         <a class="button button-small" href="index.html#cursos">Ver cursos 
-            <!-- <span>↗</span> -->
         </a>
     </header>
     <main class="course-hero section-pad">
@@ -36,7 +42,7 @@
     <section class="course-detail section-pad">
         <div>
             <p class="section-index">O que você vai aprender</p>
-            <h2>Da base ao<br /><em>atendimento.</em></h2>
+            <h2>Da base ao <em>atendimento.</em></h2>
         </div>
         <div class="detail-copy">
             <p>Uma formação completa para quem está começando agora ou se sente perdido sobre como dirigir sua vida como
@@ -55,13 +61,13 @@
         <h2>Pronto para<br /><em>começar?</em></h2><a class="button"
             href="https://wa.me/5532984286411?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20o%20Curso%20Iniciante%20da%20MGN%20Education."
             target="_blank" rel="noreferrer">Tenho interesse no iniciante 
-            <!-- <span>↗</span> -->
         </a>
     </section>
     <footer class="site-footer"><a class="brand" href="index.html"><img class="logo-image" src="img/logo.png"
                 alt="MGN Education" /></a><span>Rua Luiz Favero, 410 · Bom Jardim, JF</span><span>Site por <a
                 href="https://anaprick.vercel.app/" target="_blank" rel="noreferrer">Anaprick Systems</a></span>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
