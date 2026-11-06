@@ -327,6 +327,10 @@ body {
         padding-bottom: 90px
     }
 
+    .beginner-page .beginner-attendance-break {
+        display: block
+    }
+
     .course-cta {
         padding-top: 85px;
         padding-bottom: 95px
